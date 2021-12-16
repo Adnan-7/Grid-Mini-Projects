@@ -69,3 +69,44 @@ p {
   background: var(--primaryColor);
   color: var(--mainWhite);
 }
+
+/* 
+============
+Main Navebar
+============
+*/
+
+.main-navbar {
+  background: var(--darkGrey);
+  padding: 0 2rem;
+}
+
+.main-navbar li {
+  list-style-type: none;
+}
+
+.main-navbar a {
+  color: var(--mainWhite);
+  display: block;
+  padding: 1rem;
+  text-transform: capitalize;
+  letter-spacing: var(--mainSpacing);
+  transition: var(--mainTransition);
+}
+
+.main-navbar a:hover {
+  color: var(--primaryColor);
+  padding-left: 1.25rem;
+}
+
+@media screen and (min-width: 992px) {
+  .main-navbar ul {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .main-navbar a {
+    text-align: center;
+  }
+}
