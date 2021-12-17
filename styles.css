@@ -143,3 +143,41 @@ Main Navebar
       url('./images/image-2.jpeg') center/cover fixed no-repeat;
   }
 }
+
+/* 
+============
+ Hero
+============
+*/
+
+.cards {
+  padding: 4rem 0;
+}
+
+.title {
+  text-align: center;
+}
+
+.cards-center {
+  width: 80vw;
+  max-width: 1170px;
+  margin: 2rem auto;
+}
+
+.card {
+  border: 1px solid darkgray;
+  margin: 3rem 0;
+}
+
+.card-info {
+  padding: 1rem;
+}
+
+.card-footer {
+  background: #6c4f9c;
+  padding: 0.5rem 1rem;
+  color: var(--mainWhite);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
