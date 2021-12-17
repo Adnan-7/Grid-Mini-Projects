@@ -4,7 +4,7 @@ Variables
 ============
 */
 :root {
-  --primaryColor: #fc4445;
+  --primaryColor: rgb(252, 68, 69);
   --mainBlack: #222;
   --mainWhite: #fff;
   --offWhite: #f7f7f7;
@@ -95,7 +95,8 @@ Main Navebar
 }
 
 .main-navbar a:hover {
-  color: var(--primaryColor);
+  /* background-color: var(--primaryColor); */
+  background: #6c4f9c;
   padding-left: 1.25rem;
 }
 
@@ -108,5 +109,37 @@ Main Navebar
   }
   .main-navbar a {
     text-align: center;
+  }
+}
+
+/* 
+============
+ Hero
+============
+*/
+
+.hero-header {
+  min-height: 100vh;
+  background: var(--primaryColor);
+  color: var(--mainWhite);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-banner {
+  padding: 0 3rem;
+}
+
+.hero-banner p {
+  width: 80%;
+  max-width: 560px;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-header {
+    background: linear-gradient(rgba(252, 68, 69, 0.75), rgba(0, 0, 0, 0.75)),
+      url('./images/image-2.jpeg') center/cover fixed no-repeat;
   }
 }
